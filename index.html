@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metro Last Night</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Kalam&family=Kaushan+Script&family=Rubik+Iso&family=Special+Elite&display=swap" rel="stylesheet">
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  var cards = document.querySelectorAll('.card');
+
+  var options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2
+  };
+
+  var observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('appear');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+
+  cards.forEach(function(card) {
+    observer.observe(card);
+  });
+});
+
+</script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="templete">
+      <nav>
+        <img src="images/2755_metro-last-night.png" alt="Logo" class="logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Game.html">Game Video</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          
+        </ul>
+      </nav>
+
+
+
+
+      
+        <div class="card-container">
+          <div class="card appear">
+          <div class="card">
+            <img src="images/1684837930_new_a241c00a03bc2e135a61c0736b520b45.png" alt="Game Image">
+            <div class="card-content">
+              <p class="card-description">Dive into chaos. Conquer the Metro. "Metro Last Night" awaits. Survive mutant horrors, make life-or-death choices, shape humanity's destiny. Will you rise as a hero or succumb to darkness? Embark on the ultimate post-apocalyptic journey. Unleash your courage. The Metro calls.
+              </p>
+              <a href="#" class="card-button">Play Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+
+<div class="background-bottom">
+  <!-- Add this code inside the "container" div, after the "background-bottom" div -->
+
+<section class="game-info">
+  <div class="star-rating">
+    <h3 id="r">Rating:</h3>
+    <span class="fake-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+  </div>
+
+  <div class="comments">
+    <h3>Best Comments:</h3>
+    <ul class="comment-list">
+      <li class="comment">This game is amazing! Highly recommended!</li>
+      <li class="comment">I couldn't tear myself away from this game. The gripping narrative had me emotionally invested in the characters, and the intense combat sequences kept me engaged throughout. It's a gaming experience like no other."</li>
+      <li class="comment">Best game I've ever played. 10/10!</li>
+    </ul>
+  </div>
+
+
+
+
+  <div class="player-count">
+    <h3> Player:</h3>
+    <span class="fake-count">+1.000</span>
+  </div>
+
+  
+</section>
+</div>
+</div>
+  
+
+
+</section>
+
+
+      </div>
+    
+      
+    
+  </div>
+
+  
+  
+
+
+
+</body>
+</html>
+
